@@ -5,7 +5,7 @@ import os
 import httpx
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("Tarefas")
+mcp = FastMCP("Tarefas", log_level="ERROR")
 API_URL = os.environ.get("TAREFAS_API_URL", "http://localhost:8000").rstrip("/")
 
 
